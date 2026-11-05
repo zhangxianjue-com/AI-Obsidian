@@ -1,0 +1,6 @@
+# Python 虚拟环境（由 JupyMD 插件创建，可在本地重新生成）
+.jupymd/
+
+# Python 缓存
+__pycache__/
+*.py[cod]

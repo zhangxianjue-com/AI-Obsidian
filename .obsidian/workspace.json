@@ -6,19 +6,16 @@
       {
         "id": "9de58eacdfed2c0f",
         "type": "tabs",
+        "dimension": 70.58823529411765,
         "children": [
           {
             "id": "dbd585931859fcf1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Obsidian/使用 Obsidian 笔记.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "使用 Obsidian 笔记"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
         ]
@@ -26,6 +23,7 @@
       {
         "id": "416e25e3b5733ad5",
         "type": "tabs",
+        "dimension": 29.411764705882355,
         "children": [
           {
             "id": "60552365ca7a61c4",
@@ -99,7 +97,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "8e313496c50130d6",
@@ -206,16 +205,44 @@
   },
   "active": "dbd585931859fcf1",
   "lastOpenFiles": [
+    "AI.md",
+    "python/Setup Python.md",
+    "python/opp/command.md",
+    "python/opp/function.md",
+    "python/opp/class.md",
+    "python/package/package.md.tmp.21156.4261aa60b5fd",
+    "python/package/Matplotlib.md",
+    "python/data-type/dict.md",
+    "python/data-type/list.md",
+    "python/data-type/data-type.md",
+    "python/package/numpy.md",
+    "python/package/NumPy.md",
+    "python/package/numpy.ipynb",
+    "python/标准库/stdlib.md",
+    "python/data-type/标量.md",
+    "python/data-type/标量.ipynb",
+    "python/data-type/数据类型.md",
+    "python/data-type",
+    "python/opp",
+    "python/面向对象编程",
+    "python/第三方库/第三方库.md",
+    "python/第三方库",
+    "python/标准库/numpy.md",
+    "python/标准库/math.md",
+    "python/标准库/random.md",
+    "python/标准库/随机数.md",
+    "python/数据类型/随机数.md",
+    "python/标准库/math.ipynb",
+    "python/数据类型/标量.md",
+    "python/标准库/标准库.md",
+    "python/模块/模块.md",
+    "python/标准库/模块.md",
+    "python/标准库",
+    "python/模块/math.md",
+    "python/模块",
+    "Setup Python.md",
     "Obsidian/Images/Pasted image 20261101102430.png",
-    "欢迎.md",
-    "Obsidian/使用 Obsidian 笔记.md",
-    "Obsidian/Images",
     "Obsidian/Images/Pasted image 20261101102259.png",
-    "Obsidian/Images/Pasted image 20261101102233.png",
-    "创建链接.md",
-    "2026-11-01.md",
-    "使用笔记/未命名.md",
-    "使用笔记",
-    "Obsidian"
+    "Obsidian/Images/Pasted image 20261101102233.png"
   ]
 }
