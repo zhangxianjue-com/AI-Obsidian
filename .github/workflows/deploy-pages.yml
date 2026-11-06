@@ -1,0 +1,93 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@v4
+
+      - name: Checkout Quartz framework (pinned)
+        uses: actions/checkout@v4
+        with:
+          repository: jackyzha0/quartz
+          ref: d25a6eabf96751ffca56f8a8139272def7a65041
+          path: _quartz
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: _quartz/package-lock.json
+
+      - name: Prepare content
+        run: |
+          rm -rf _quartz/content
+          mkdir -p _quartz/content
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.obsidian' \
+            --exclude='.jupymd' \
+            --exclude='_quartz' \
+            --exclude='.gitignore' \
+            --exclude='CLAUDE.md' \
+            --exclude='quartz.config.ts' \
+            --exclude='quartz.layout.ts' \
+            ./ _quartz/content/
+
+          cp quartz.config.ts quartz.layout.ts _quartz/
+
+          # 站点首页使用 1.AI.md 的内容，同时避免 Explorer 中出现重复条目
+          if [ -f _quartz/content/1.AI.md ]; then
+            awk '
+              NR == 1 && $0 == "---" { infm = 1; next }
+              infm && $0 == "---"   { infm = 0; next }
+              !infm                 { print }
+            ' _quartz/content/1.AI.md > /tmp/home-body.md
+            {
+              printf -- '---\ntitle: AI 学习笔记\n---\n\n'
+              cat /tmp/home-body.md
+            } > _quartz/content/index.md
+            rm _quartz/content/1.AI.md
+          fi
+
+      - name: Install dependencies
+        working-directory: _quartz
+        run: npm ci
+
+      - name: Build site
+        working-directory: _quartz
+        run: npx quartz build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _quartz/public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
