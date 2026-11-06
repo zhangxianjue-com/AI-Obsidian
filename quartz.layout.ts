@@ -8,7 +8,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/zhangxianjue-com/AI-Obsidian",
+      GitHub: "https://github.com/zhangxianjue/notes",
     },
   }),
 }

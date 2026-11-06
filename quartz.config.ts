@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "zh-CN",
-    baseUrl: "zhangxianjue-com.github.io/AI-Obsidian",
+    baseUrl: "zhangxianjue.github.io/notes",
     ignorePatterns: ["private", "templates", ".obsidian", ".jupymd", "**/*.ipynb"],
     defaultDateType: "modified",
     theme: {

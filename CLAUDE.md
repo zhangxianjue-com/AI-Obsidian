@@ -66,7 +66,7 @@
 - 虚拟环境 `.jupymd/` 基于 Python 3.15.2，已安装 `ipykernel 7.4.0`、`numpy 2.5.4`、`matplotlib 3.11.2`。
 - 系统 Python 3.8.6 提供 Jupytext / Jupyter tooling；JupyMD 插件版本为 2.0.2。
 - 换电脑后的环境恢复步骤记录在环境说明笔记中。
-- GitHub Pages 站点：<https://zhangxianjue-com.github.io/AI-Obsidian/>，推送 `main` 后由 `.github/workflows/deploy-pages.yml` 用 Quartz 自动构建发布。
+- GitHub Pages 站点：<https://zhangxianjue.github.io/notes/>，推送 `main` 后由 `.github/workflows/deploy-pages.yml` 用 Quartz 自动构建发布。
   - 站点配置：`quartz.config.ts`（标题、语言、baseUrl）、`quartz.layout.ts`（侧栏与页脚）。
   - Quartz 固定为 v4.5.2 提交 `d25a6eabf96751ffca56f8a8139272def7a65041`；升级时需同步修改工作流和配置文件。
   - 首页由 CI 从 `1.AI.md` 生成；`.obsidian/`、`.jupymd/`、`CLAUDE.md`、`*.ipynb` 不发布。
