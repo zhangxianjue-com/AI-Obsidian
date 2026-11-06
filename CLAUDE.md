@@ -72,8 +72,8 @@
   - Quartz 固定为 v4.5.2 提交 `d25a6eabf96751ffca56f8a8139272def7a65041`；升级时需同步修改工作流和配置文件。
   - 首页由 CI 从 `Note.md` 生成；`.obsidian/`、`.jupymd/`、`CLAUDE.md`、`*.ipynb` 不发布。
   - Pages 站点公开访问；仓库已设为公开，私有仓库使用 Pages 需要 GitHub 付费计划。
-- 关系图谱颜色组：
-  - 一级：`file:AI`，红色 `#E05252`
-  - 二级：`file:Python`，橙色 `#E0B152`
-  - 三级：`file:data-type OR file:opp OR file:stdlib OR file:package`，蓝色 `#4C8BF5`
-  - 四级：`path:python/ -file:Python -file:data-type -file:opp -file:stdlib -file:package`，绿色 `#4CAF50`
+- 关系图谱颜色组（按文件名前缀匹配，新增笔记自动着色）：
+  - 一级：`file:1.`，红色 `#E05252`
+  - 二级：`file:2.`，橙色 `#E0B152`
+  - 三级：`file:3.`，蓝色 `#4C8BF5`
+  - 四级：`file:4.`，绿色 `#4CAF50`
