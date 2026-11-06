@@ -8,15 +8,36 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "",
+      "query": "file:AI",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
+    },
+    {
+      "query": "file:Python",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "file:data-type OR file:opp OR file:stdlib OR file:package",
+      "color": {
+        "a": 1,
+        "rgb": 5016565
+      }
+    },
+    {
+      "query": "path:python/ -file:Python -file:data-type -file:opp -file:stdlib -file:package",
+      "color": {
+        "a": 1,
+        "rgb": 5025616
+      }
     }
   ],
-  "collapse-display": true,
-  "showArrow": true,
+  "collapse-display": false,
+  "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,

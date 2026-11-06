@@ -6,27 +6,9 @@
       {
         "id": "9de58eacdfed2c0f",
         "type": "tabs",
-        "dimension": 70.58823529411765,
         "children": [
           {
             "id": "dbd585931859fcf1",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
-            }
-          }
-        ]
-      },
-      {
-        "id": "416e25e3b5733ad5",
-        "type": "tabs",
-        "dimension": 29.411764705882355,
-        "children": [
-          {
-            "id": "60552365ca7a61c4",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -205,6 +187,24 @@
   },
   "active": "dbd585931859fcf1",
   "lastOpenFiles": [
+    "python/opp/4.command（指令）.md",
+    "python/data-type/3.data-type（数据类型）.md",
+    "python/2.Python.md",
+    "1.AI.md",
+    "1.AI.md.tmp.9836.c654ce217de7",
+    "python/package/4.Matplotlib（绘图）.md",
+    "python/package/4.NumPy（N 维数组）.md",
+    "python/package/3.package（第三方库）.md",
+    "python/stdlib/4.random（随机数）.md",
+    "python/stdlib/4.math（数学库）.ipynb",
+    "python/stdlib/4.math（数学库）.md",
+    "python/stdlib/3.stdlib（标准库）.md",
+    "python/opp/4.class（类）.md",
+    "python/opp/4.function（函数）.md",
+    "python/opp/3.opp（面向对象编程）.md",
+    "python/data-type/4.dict（字典）.md",
+    "python/data-type/4.list（列表）.md",
+    "python/data-type/4.scalar（标量）.md",
     "AI.md",
     "python/Setup Python.md",
     "python/opp/command.md",
@@ -215,32 +215,13 @@
     "python/data-type/dict.md",
     "python/data-type/list.md",
     "python/data-type/data-type.md",
-    "python/package/numpy.md",
-    "python/package/NumPy.md",
     "python/package/numpy.ipynb",
-    "python/标准库/stdlib.md",
-    "python/data-type/标量.md",
     "python/data-type/标量.ipynb",
-    "python/data-type/数据类型.md",
     "python/data-type",
     "python/opp",
     "python/面向对象编程",
-    "python/第三方库/第三方库.md",
     "python/第三方库",
-    "python/标准库/numpy.md",
-    "python/标准库/math.md",
-    "python/标准库/random.md",
-    "python/标准库/随机数.md",
-    "python/数据类型/随机数.md",
     "python/标准库/math.ipynb",
-    "python/数据类型/标量.md",
-    "python/标准库/标准库.md",
-    "python/模块/模块.md",
-    "python/标准库/模块.md",
-    "python/标准库",
-    "python/模块/math.md",
-    "python/模块",
-    "Setup Python.md",
     "Obsidian/Images/Pasted image 20261101102430.png",
     "Obsidian/Images/Pasted image 20261101102259.png",
     "Obsidian/Images/Pasted image 20261101102233.png"

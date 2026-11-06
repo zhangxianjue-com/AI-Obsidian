@@ -1,3 +1,0 @@
-## Link
-
-[[Setup Python]]
