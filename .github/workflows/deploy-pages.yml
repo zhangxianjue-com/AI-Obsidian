@@ -54,18 +54,18 @@ jobs:
 
           cp quartz.config.ts quartz.layout.ts _quartz/
 
-          # 站点首页使用 1.AI.md 的内容，同时避免 Explorer 中出现重复条目
-          if [ -f _quartz/content/1.AI.md ]; then
+          # 站点首页使用根节点 Note.md 的内容；1.AI.md / 1.CG.md 保留为普通页面
+          if [ -f _quartz/content/Note.md ]; then
             awk '
               NR == 1 && $0 == "---" { infm = 1; next }
               infm && $0 == "---"   { infm = 0; next }
               !infm                 { print }
-            ' _quartz/content/1.AI.md > /tmp/home-body.md
+            ' _quartz/content/Note.md > /tmp/home-body.md
             {
-              printf -- '---\ntitle: AI 学习笔记\n---\n\n'
+              printf -- '---\ntitle: Note 学习笔记\n---\n\n'
               cat /tmp/home-body.md
             } > _quartz/content/index.md
-            rm _quartz/content/1.AI.md
+            rm _quartz/content/Note.md
           fi
 
       - name: Install dependencies

@@ -1,5 +1,5 @@
-import { QuartzConfig } from "./quartz/cfg"
-import * as Plugin from "./quartz/plugins"
+import { QuartzConfig } from "./quartz/cfg";
+import * as Plugin from "./quartz/plugins";
 
 /**
  * Quartz 4 配置
@@ -9,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "AI 学习笔记",
+    pageTitle: "Note 学习笔记",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -91,6 +91,6 @@ const config: QuartzConfig = {
       // Plugin.CustomOgImages(),
     ],
   },
-}
+};
 
-export default config
+export default config;
