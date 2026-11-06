@@ -63,7 +63,7 @@
 - 本仓库是 Python 学习笔记库，笔记使用中文，代码通过 JupyMD 运行。
 - 笔记根目录为 `python/`，按 `data-type`、`opp`、`stdlib`、`package` 分类。
 - 层级命名：一级 `1.<名称>`、二级 `2.<名称>`、分类索引 `3.<英文名>（中文名）`、具体笔记 `4.<英文名>（中文名）`。
-- 笔记根节点为 `Note.md`，链接到 `1.AI.md` 和 `1.CG.md`。
+- 笔记根节点为 `Note.md`，链接到 `1.AI.md` 和 `1.Game.md`。
 - 虚拟环境 `.jupymd/` 基于 Python 3.15.2，已安装 `ipykernel 7.4.0`、`numpy 2.5.4`、`matplotlib 3.11.2`。
 - 系统 Python 3.8.6 提供 Jupytext / Jupyter tooling；JupyMD 插件版本为 2.0.2。
 - 换电脑后的环境恢复步骤记录在环境说明笔记中。
